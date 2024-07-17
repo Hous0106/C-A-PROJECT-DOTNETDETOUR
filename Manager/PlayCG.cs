@@ -27,8 +27,8 @@ namespace DotNetDetour.Manager
         [HookMethod("WPFLauncher.Manager.Configuration.awo")]
         public bool get_PlayCG()
         {
-            SocketUtil.Send2Server("PlayCG");
-            return false;
+            SocketUtil.Send2Server("PlayCG Get WPFLauncher Code");
+            return false;//return false to PlayCG
         }
     }
 }
